@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IF stetment</title>
+</head>
+<body>
+    <script>
+        var salary =(prompt("salary number:"));
+        if (salary > 0 && salary <=100){
+            document.writeln("You have to pay 5% ")
+        }
+        if(salary > 101 && salary <=200){
+            document.writeln("You have to pay 10%")
+        }
+        if (salary >201 && salary <= 300){
+            document.writeln ("you have to pay 20%")
+        }
+        if(salary >301 && salary <=400){
+            document.writeln ("You have to pay 30%")
+        }else{
+            document.writeln ("salary not if you have to pay 50% ");
+        }
+    </script>
+    <script>
+    
+       var btn = document.querySelector("button");
+       btn .addEventListener("click",onclick),
+       function onclick(){
+        if (inputsAreEmpty()){
+        label.textContent = 'Erorr: one or both inputs are empy ';
+        return;
+        }
+        updateLabel();
+       }
+       function inputsAreEmpty(){
+        if (getNumber1()  ==='' || getNumber2() ===''){
+            return true;
+        }else{
+            return false;
+        }
+       }function updateLabel(){
+        var addend1 = getNumber1=5;
+        var addend2 = getNumber2=1;
+        var sum = addend1 + addend2;
+        label.textContent = addend1 + '+'+ addend2 + '='+ sum;
+       }
+       function getNumber1(){
+        return inputs[0].value;
+       }
+       function getNumber2(){
+        return inputs[1].value;
+       }
+       var input = document.querySelectorAll('input');
+       var label = document.querySelector('p');
+       var button = document.querySelector('button');
+       button.addEventListener('click', onclick);
+    </script>
+    </script>
+</body>
+</html>

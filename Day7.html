@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: blue;"> Quastion Every week </h2>
+    <script>
+        var secretNumber = parseInt(prompt("Pick a Number between 1-5 :"));
+        switch (secretNumber){
+            case 1:
+                document.writeln ("Too Level 1 ");
+                break;
+            case 2:
+                document.writeln ("Too Level 2 ");
+                break;
+            case 3: 
+                document.writeln ("You guses the secret Number ");
+                break;
+            case 4: 
+                document.writeln ("Too higth Lecel 1 ");
+                break;
+            case 5: 
+                document.writeln ("Too higth level 2 ");
+                break;
+            default  :
+                document.writeln ("wrong Number ");
+                break;
+        }
+    </script>
+    <p style="color: blue;"> <===========break page ============></p>
+    <p></p>
+    <h2 style="color: blue;">Demonstrate use of for...in loop</h2>
+    <script>
+        var languages ={
+            first :  ("C++ Programming "),
+            second : ("JavaScript Programming "),
+            third : ("Python Programming "),
+            fourth: ("Englist "),
+            fifth : ("PHP Programming "),
+        }
+        for (itr in languages){
+            document.writeln ("Object is :" +languages[itr] +"<br/>")
+        }
+    </script>
+    <h2 style="color: blue;">Break and Continue </h2>
+    <h2 id="demo">Break And Continue </h2>
+    <script>
+        let text ="";
+        for (i=0 ; i<11 ; i++){
+            if (i==2 || i== 4 ){continue}
+            text +=("The Value I :"+i+ "<br>");
+        }
+        document.getElementById("demo").innerHTML=text;
+    </script>
+   
+</body>
+</html>
